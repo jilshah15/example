@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Form</title>
+</head>
+<script>
+    function btnClick(){
+        document.write();
+    }
+</script>
+<body>
+    <form action='/t' method='POST'>
+    <input type="hidden"  name="SecretAccessKey" value="<%= data.SecretAccessKey %>" ><br/>
+    <input type="hidden"  name="AccessKeyId"   value="<%= data.AccessKeyId %>"  ><br/>
+    <input type="hidden"  name="BucketName"   value="<%= data.BucketName %>"  ><br/>
+    <input type="hidden"  name="folderName"   value="<%= data.folderName %>"  ><br/>
+    <!-- <h2><%= data.SecretAccessKey %></h2> -->
+    <!-- <h2><%= data.AccessKeyId %></h2> -->
+    <!-- <h2><%= data.BucketName %></h2> -->
+    <!-- <h2><%= data.folderName %></h2> -->
+    <button onclick="btnClick();">Submit</button>
+    </form>
+  </body>
+</html>
+
